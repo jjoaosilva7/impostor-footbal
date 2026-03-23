@@ -5,141 +5,141 @@
 
 const JOGADORES = [
 // ===== BRASILEIROS =====
-{ name: “Ronaldo Fenômeno”, pos: “Brasil 🇧🇷 | Aposentado”, bio: “Extraterrestre”, wiki: “Ronaldo_(Brazilian_footballer)”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Ronaldinho Gaúcho”, pos: “Brasil 🇧🇷 | Aposentado”, bio: “Freestyle”, wiki: “Ronaldinho”, foot: “Canhoto”, pos_type: “Meia”, continent: “Sul-americano” },
-{ name: “Rivaldo”, pos: “Brasil 🇧🇷 | Aposentado”, bio: “Bicicleta”, wiki: “Rivaldo”, foot: “Canhoto”, pos_type: “Meia”, continent: “Sul-americano” },
-{ name: “Romário”, pos: “Brasil 🇧🇷 | Aposentado”, bio: “Baixinho”, wiki: “Romário”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Bebeto”, pos: “Brasil 🇧🇷 | Aposentado”, bio: “Bebê”, wiki: “Bebeto”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Zico”, pos: “Brasil 🇧🇷 | Aposentado”, bio: “Galinho”, wiki: “Zico”, foot: “Destro”, pos_type: “Meia”, continent: “Sul-americano” },
-{ name: “Pelé”, pos: “Brasil 🇧🇷 | Aposentado”, bio: “Rei”, wiki: “Pelé”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Garrincha”, pos: “Brasil 🇧🇷 | Aposentado”, bio: “Tortas”, wiki: “Garrincha”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Roberto Carlos”, pos: “Brasil 🇧🇷 | Aposentado”, bio: “Foguete”, wiki: “Roberto_Carlos_(footballer)”, foot: “Canhoto”, pos_type: “Defensor”, continent: “Sul-americano” },
-{ name: “Cafu”, pos: “Brasil 🇧🇷 | Aposentado”, bio: “Overlap”, wiki: “Cafu”, foot: “Destro”, pos_type: “Defensor”, continent: “Sul-americano” },
-{ name: “Neymar Jr.”, pos: “Brasil 🇧🇷 | Al-Hilal”, bio: “Passinho”, wiki: “Neymar”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Vinicius Jr.”, pos: “Brasil 🇧🇷 | Real Madrid”, bio: “Dança”, wiki: “Vinicius_Junior”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Raphinha”, pos: “Brasil 🇧🇷 | Barcelona”, bio: “Capitão”, wiki: “Raphinha”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Rodrygo”, pos: “Brasil 🇧🇷 | Real Madrid”, bio: “Decisivo”, wiki: “Rodrygo”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Endrick”, pos: “Brasil 🇧🇷 | Real Madrid”, bio: “Prodígio”, wiki: “Endrick”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Casemiro”, pos: “Brasil 🇧🇷 | Manchester United”, bio: “Destruidor”, wiki: “Casemiro”, foot: “Destro”, pos_type: “Meia”, continent: “Sul-americano” },
-{ name: “Bruno Guimarães”, pos: “Brasil 🇧🇷 | Newcastle”, bio: “Pitbull”, wiki: “Bruno_Guimarães”, foot: “Destro”, pos_type: “Meia”, continent: “Sul-americano” },
-{ name: “Alisson Becker”, pos: “Brasil 🇧🇷 | Liverpool”, bio: “Cabeçada”, wiki: “Alisson_Becker”, foot: “Destro”, pos_type: “Goleiro”, continent: “Sul-americano” },
-{ name: “Marquinhos”, pos: “Brasil 🇧🇷 | PSG”, bio: “Capitão”, wiki: “Marquinhos_(footballer)”, foot: “Destro”, pos_type: “Defensor”, continent: “Sul-americano” },
+{ name: “Ronaldo Fenômeno”, pos: “Brazil 🇧🇷 | Retired”, bio: “Extraterrestre”, wiki: “Ronaldo_(Brazilian_footballer)”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Ronaldinho Gaúcho”, pos: “Brazil 🇧🇷 | Retired”, bio: “Freestyle”, wiki: “Ronaldinho”, foot: “Left foot”, pos_type: “Midfielder”, continent: “South American” },
+{ name: “Rivaldo”, pos: “Brazil 🇧🇷 | Retired”, bio: “Bicicleta”, wiki: “Rivaldo”, foot: “Left foot”, pos_type: “Midfielder”, continent: “South American” },
+{ name: “Romário”, pos: “Brazil 🇧🇷 | Retired”, bio: “Baixinho”, wiki: “Romário”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Bebeto”, pos: “Brazil 🇧🇷 | Retired”, bio: “Bebê”, wiki: “Bebeto”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Zico”, pos: “Brazil 🇧🇷 | Retired”, bio: “Galinho”, wiki: “Zico”, foot: “Right foot”, pos_type: “Midfielder”, continent: “South American” },
+{ name: “Pelé”, pos: “Brazil 🇧🇷 | Retired”, bio: “Rei”, wiki: “Pelé”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Garrincha”, pos: “Brazil 🇧🇷 | Retired”, bio: “Tortas”, wiki: “Garrincha”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Roberto Carlos”, pos: “Brazil 🇧🇷 | Retired”, bio: “Foguete”, wiki: “Roberto_Carlos_(footballer)”, foot: “Left foot”, pos_type: “Defender”, continent: “South American” },
+{ name: “Cafu”, pos: “Brazil 🇧🇷 | Retired”, bio: “Overlap”, wiki: “Cafu”, foot: “Right foot”, pos_type: “Defender”, continent: “South American” },
+{ name: “Neymar Jr.”, pos: “Brazil 🇧🇷 | Al-Hilal”, bio: “Passinho”, wiki: “Neymar”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Vinicius Jr.”, pos: “Brazil 🇧🇷 | Real Madrid”, bio: “Dança”, wiki: “Vinicius_Junior”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Raphinha”, pos: “Brazil 🇧🇷 | Barcelona”, bio: “Capitão”, wiki: “Raphinha”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Rodrygo”, pos: “Brazil 🇧🇷 | Real Madrid”, bio: “Decisivo”, wiki: “Rodrygo”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Endrick”, pos: “Brazil 🇧🇷 | Real Madrid”, bio: “Prodígio”, wiki: “Endrick”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Casemiro”, pos: “Brazil 🇧🇷 | Manchester United”, bio: “Destruidor”, wiki: “Casemiro”, foot: “Right foot”, pos_type: “Midfielder”, continent: “South American” },
+{ name: “Bruno Guimarães”, pos: “Brazil 🇧🇷 | Newcastle”, bio: “Pitbull”, wiki: “Bruno_Guimarães”, foot: “Right foot”, pos_type: “Midfielder”, continent: “South American” },
+{ name: “Alisson Becker”, pos: “Brazil 🇧🇷 | Liverpool”, bio: “Cabeçada”, wiki: “Alisson_Becker”, foot: “Right foot”, pos_type: “Goalkeeper”, continent: “South American” },
+{ name: “Marquinhos”, pos: “Brazil 🇧🇷 | PSG”, bio: “Capitão”, wiki: “Marquinhos_(footballer)”, foot: “Right foot”, pos_type: “Defender”, continent: “South American” },
 
 // ===== ARGENTINOS =====
-{ name: “Diego Maradona”, pos: “Argentina 🇦🇷 | Aposentado”, bio: “Mão”, wiki: “Diego_Maradona”, foot: “Canhoto”, pos_type: “Meia”, continent: “Sul-americano” },
-{ name: “Gabriel Batistuta”, pos: “Argentina 🇦🇷 | Aposentado”, bio: “Batigol”, wiki: “Gabriel_Batistuta”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Hernán Crespo”, pos: “Argentina 🇦🇷 | Aposentado”, bio: “Milão”, wiki: “Hernán_Crespo”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Javier Zanetti”, pos: “Argentina 🇦🇷 | Aposentado”, bio: “Capitano”, wiki: “Javier_Zanetti”, foot: “Destro”, pos_type: “Defensor”, continent: “Sul-americano” },
-{ name: “Sergio Agüero”, pos: “Argentina 🇦🇷 | Aposentado”, bio: “Agüeroooo”, wiki: “Sergio_Agüero”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Lionel Messi”, pos: “Argentina 🇦🇷 | Inter Miami”, bio: “Qatar”, wiki: “Lionel_Messi”, foot: “Canhoto”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Lautaro Martínez”, pos: “Argentina 🇦🇷 | Inter de Milão”, bio: “Toro”, wiki: “Lautaro_Martínez”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Julián Álvarez”, pos: “Argentina 🇦🇷 | Atlético de Madrid”, bio: “Aranha”, wiki: “Julián_Álvarez”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Enzo Fernández”, pos: “Argentina 🇦🇷 | Chelsea”, bio: “Melhor jovem”, wiki: “Enzo_Fernández”, foot: “Destro”, pos_type: “Meia”, continent: “Sul-americano” },
-{ name: “Emiliano Martínez”, pos: “Argentina 🇦🇷 | Aston Villa”, bio: “Provocação”, wiki: “Emiliano_Martínez”, foot: “Destro”, pos_type: “Goleiro”, continent: “Sul-americano” },
+{ name: “Diego Maradona”, pos: “Argentina 🇦🇷 | Retired”, bio: “Mão”, wiki: “Diego_Maradona”, foot: “Left foot”, pos_type: “Midfielder”, continent: “South American” },
+{ name: “Gabriel Batistuta”, pos: “Argentina 🇦🇷 | Retired”, bio: “Batigol”, wiki: “Gabriel_Batistuta”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Hernán Crespo”, pos: “Argentina 🇦🇷 | Retired”, bio: “Milão”, wiki: “Hernán_Crespo”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Javier Zanetti”, pos: “Argentina 🇦🇷 | Retired”, bio: “Capitano”, wiki: “Javier_Zanetti”, foot: “Right foot”, pos_type: “Defender”, continent: “South American” },
+{ name: “Sergio Agüero”, pos: “Argentina 🇦🇷 | Retired”, bio: “Agüeroooo”, wiki: “Sergio_Agüero”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Lionel Messi”, pos: “Argentina 🇦🇷 | Inter Miami”, bio: “Qatar”, wiki: “Lionel_Messi”, foot: “Left foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Lautaro Martínez”, pos: “Argentina 🇦🇷 | Inter Milan”, bio: “Toro”, wiki: “Lautaro_Martínez”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Julián Álvarez”, pos: “Argentina 🇦🇷 | Atlético Madrid”, bio: “Aranha”, wiki: “Julián_Álvarez”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Enzo Fernández”, pos: “Argentina 🇦🇷 | Chelsea”, bio: “Melhor jovem”, wiki: “Enzo_Fernández”, foot: “Right foot”, pos_type: “Midfielder”, continent: “South American” },
+{ name: “Emiliano Martínez”, pos: “Argentina 🇦🇷 | Aston Villa”, bio: “Provocação”, wiki: “Emiliano_Martínez”, foot: “Right foot”, pos_type: “Goalkeeper”, continent: “South American” },
 
 // ===== FRANCESES =====
-{ name: “Zinedine Zidane”, pos: “França 🇫🇷 | Aposentado”, bio: “Cabeçada”, wiki: “Zinedine_Zidane”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Thierry Henry”, pos: “França 🇫🇷 | Aposentado”, bio: “Invencível”, wiki: “Thierry_Henry”, foot: “Canhoto”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Patrick Vieira”, pos: “França 🇫🇷 | Aposentado”, bio: “Arsenal”, wiki: “Patrick_Vieira”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Robert Pires”, pos: “França 🇫🇷 | Aposentado”, bio: “Elegância”, wiki: “Robert_Pires”, foot: “Canhoto”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Kylian Mbappé”, pos: “França 🇫🇷 | Real Madrid”, bio: “Foguete”, wiki: “Kylian_Mbappé”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Antoine Griezmann”, pos: “França 🇫🇷 | Atlético de Madrid”, bio: “Fortnite”, wiki: “Antoine_Griezmann”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Ousmane Dembélé”, pos: “França 🇫🇷 | PSG”, bio: “Lesão”, wiki: “Ousmane_Dembélé”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Aurélien Tchouaméni”, pos: “França 🇫🇷 | Real Madrid”, bio: “Herdeiro”, wiki: “Aurélien_Tchouaméni”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
+{ name: “Zinedine Zidane”, pos: “France 🇫🇷 | Retired”, bio: “Cabeçada”, wiki: “Zinedine_Zidane”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Thierry Henry”, pos: “France 🇫🇷 | Retired”, bio: “Invencível”, wiki: “Thierry_Henry”, foot: “Left foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Patrick Vieira”, pos: “France 🇫🇷 | Retired”, bio: “Arsenal”, wiki: “Patrick_Vieira”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Robert Pires”, pos: “France 🇫🇷 | Retired”, bio: “Elegância”, wiki: “Robert_Pires”, foot: “Left foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Kylian Mbappé”, pos: “France 🇫🇷 | Real Madrid”, bio: “Foguete”, wiki: “Kylian_Mbappé”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Antoine Griezmann”, pos: “France 🇫🇷 | Atlético Madrid”, bio: “Fortnite”, wiki: “Antoine_Griezmann”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Ousmane Dembélé”, pos: “France 🇫🇷 | PSG”, bio: “Lesão”, wiki: “Ousmane_Dembélé”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Aurélien Tchouaméni”, pos: “France 🇫🇷 | Real Madrid”, bio: “Herdeiro”, wiki: “Aurélien_Tchouaméni”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
 
 // ===== ESPANHÓIS =====
-{ name: “Andrés Iniesta”, pos: “Espanha 🇪🇸 | Aposentado”, bio: “Joanesburgo”, wiki: “Andrés_Iniesta”, foot: “Canhoto”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Xavi Hernández”, pos: “Espanha 🇪🇸 | Aposentado”, bio: “Tiki-taka”, wiki: “Xavi”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “David Villa”, pos: “Espanha 🇪🇸 | Aposentado”, bio: “Guaje”, wiki: “David_Villa”, foot: “Canhoto”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Fernando Torres”, pos: “Espanha 🇪🇸 | Aposentado”, bio: “Niño”, wiki: “Fernando_Torres”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Raúl González”, pos: “Espanha 🇪🇸 | Aposentado”, bio: “Dedo”, wiki: “Raúl_(footballer)”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Sergio Ramos”, pos: “Espanha 🇪🇸 | Vissel Kobe”, bio: “Cabeçada”, wiki: “Sergio_Ramos”, foot: “Destro”, pos_type: “Defensor”, continent: “Europeu” },
-{ name: “Carles Puyol”, pos: “Espanha 🇪🇸 | Aposentado”, bio: “Cabelo”, wiki: “Carles_Puyol”, foot: “Destro”, pos_type: “Defensor”, continent: “Europeu” },
-{ name: “Iker Casillas”, pos: “Espanha 🇪🇸 | Aposentado”, bio: “San Iker”, wiki: “Iker_Casillas”, foot: “Destro”, pos_type: “Goleiro”, continent: “Europeu” },
-{ name: “Lamine Yamal”, pos: “Espanha 🇪🇸 | Barcelona”, bio: “Milagre”, wiki: “Lamine_Yamal”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Pedri”, pos: “Espanha 🇪🇸 | Barcelona”, bio: “Herdeiro”, wiki: “Pedri”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Gavi”, pos: “Espanha 🇪🇸 | Barcelona”, bio: “Raiva”, wiki: “Gavi_(footballer)”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Rodri”, pos: “Espanha 🇪🇸 | Manchester City”, bio: “Bola de Ouro”, wiki: “Rodri_(footballer)”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Álvaro Morata”, pos: “Espanha 🇪🇸 | Milan”, bio: “Polêmica”, wiki: “Álvaro_Morata”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
+{ name: “Andrés Iniesta”, pos: “Spain 🇪🇸 | Retired”, bio: “Joanesburgo”, wiki: “Andrés_Iniesta”, foot: “Left foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Xavi Hernández”, pos: “Spain 🇪🇸 | Retired”, bio: “Tiki-taka”, wiki: “Xavi”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “David Villa”, pos: “Spain 🇪🇸 | Retired”, bio: “Guaje”, wiki: “David_Villa”, foot: “Left foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Fernando Torres”, pos: “Spain 🇪🇸 | Retired”, bio: “Niño”, wiki: “Fernando_Torres”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Raúl González”, pos: “Spain 🇪🇸 | Retired”, bio: “Dedo”, wiki: “Raúl_(footballer)”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Sergio Ramos”, pos: “Spain 🇪🇸 | Vissel Kobe”, bio: “Cabeçada”, wiki: “Sergio_Ramos”, foot: “Right foot”, pos_type: “Defender”, continent: “European” },
+{ name: “Carles Puyol”, pos: “Spain 🇪🇸 | Retired”, bio: “Cabelo”, wiki: “Carles_Puyol”, foot: “Right foot”, pos_type: “Defender”, continent: “European” },
+{ name: “Iker Casillas”, pos: “Spain 🇪🇸 | Retired”, bio: “San Iker”, wiki: “Iker_Casillas”, foot: “Right foot”, pos_type: “Goalkeeper”, continent: “European” },
+{ name: “Lamine Yamal”, pos: “Spain 🇪🇸 | Barcelona”, bio: “Milagre”, wiki: “Lamine_Yamal”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Pedri”, pos: “Spain 🇪🇸 | Barcelona”, bio: “Herdeiro”, wiki: “Pedri”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Gavi”, pos: “Spain 🇪🇸 | Barcelona”, bio: “Raiva”, wiki: “Gavi_(footballer)”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Rodri”, pos: “Spain 🇪🇸 | Manchester City”, bio: “Bola de Ouro”, wiki: “Rodri_(footballer)”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Álvaro Morata”, pos: “Spain 🇪🇸 | Milan”, bio: “Polêmica”, wiki: “Álvaro_Morata”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
 
 // ===== PORTUGUESES =====
-{ name: “Luís Figo”, pos: “Portugal 🇵🇹 | Aposentado”, bio: “Cabeça de porco”, wiki: “Luís_Figo”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Rui Costa”, pos: “Portugal 🇵🇹 | Aposentado”, bio: “Visão”, wiki: “Rui_Costa_(footballer,*born_1972)”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Eusébio”, pos: “Portugal 🇵🇹 | Aposentado”, bio: “Pantera”, wiki: “Eusébio”, foot: “Destro”, pos_type: “Atacante”, continent: “Africano” },
-{ name: “Cristiano Ronaldo”, pos: “Portugal 🇵🇹 | Al-Nassr”, bio: “Siuuu”, wiki: “Cristiano_Ronaldo”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Bruno Fernandes”, pos: “Portugal 🇵🇹 | Manchester United”, bio: “Pênalti”, wiki: “Bruno_Fernandes*(footballer,_born_1994)”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Rafael Leão”, pos: “Portugal 🇵🇹 | Milan”, bio: “Turbo”, wiki: “Rafael_Leão”, foot: “Canhoto”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Bernardo Silva”, pos: “Portugal 🇵🇹 | Manchester City”, bio: “Silencioso”, wiki: “Bernardo_Silva”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
+{ name: “Luís Figo”, pos: “Portugal 🇵🇹 | Retired”, bio: “Cabeça de porco”, wiki: “Luís_Figo”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Rui Costa”, pos: “Portugal 🇵🇹 | Retired”, bio: “Visão”, wiki: “Rui_Costa_(footballer,*born_1972)”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Eusébio”, pos: “Portugal 🇵🇹 | Retired”, bio: “Pantera”, wiki: “Eusébio”, foot: “Right foot”, pos_type: “Forward”, continent: “African” },
+{ name: “Cristiano Ronaldo”, pos: “Portugal 🇵🇹 | Al-Nassr”, bio: “Siuuu”, wiki: “Cristiano_Ronaldo”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Bruno Fernandes”, pos: “Portugal 🇵🇹 | Manchester United”, bio: “Pênalti”, wiki: “Bruno_Fernandes*(footballer,_born_1994)”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Rafael Leão”, pos: “Portugal 🇵🇹 | Milan”, bio: “Turbo”, wiki: “Rafael_Leão”, foot: “Left foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Bernardo Silva”, pos: “Portugal 🇵🇹 | Manchester City”, bio: “Silencioso”, wiki: “Bernardo_Silva”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
 
 // ===== INGLESES =====
-{ name: “David Beckham”, pos: “Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Aposentado”, bio: “Cueca”, wiki: “David_Beckham”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Wayne Rooney”, pos: “Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Aposentado”, bio: “Raiva”, wiki: “Wayne_Rooney”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Steven Gerrard”, pos: “Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Aposentado”, bio: “Escorregão”, wiki: “Steven_Gerrard”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Frank Lampard”, pos: “Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Aposentado”, bio: “Fantasma”, wiki: “Frank_Lampard”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Michael Owen”, pos: “Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Aposentado”, bio: “France98”, wiki: “Michael_Owen”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Paul Scholes”, pos: “Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Aposentado”, bio: “Laranja”, wiki: “Paul_Scholes”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Jude Bellingham”, pos: “Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Real Madrid”, bio: “Sevilha”, wiki: “Jude_Bellingham”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Harry Kane”, pos: “Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Bayern de Munique”, bio: “Sem título”, wiki: “Harry_Kane”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Phil Foden”, pos: “Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Manchester City”, bio: “Stockport”, wiki: “Phil_Foden”, foot: “Canhoto”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Bukayo Saka”, pos: “Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Arsenal”, bio: “Pênalti perdido”, wiki: “Bukayo_Saka”, foot: “Canhoto”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Cole Palmer”, pos: “Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Chelsea”, bio: “Gelo”, wiki: “Cole_Palmer”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
+{ name: “David Beckham”, pos: “England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Retired”, bio: “Cueca”, wiki: “David_Beckham”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Wayne Rooney”, pos: “England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Retired”, bio: “Raiva”, wiki: “Wayne_Rooney”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Steven Gerrard”, pos: “England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Retired”, bio: “Escorregão”, wiki: “Steven_Gerrard”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Frank Lampard”, pos: “England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Retired”, bio: “Fantasma”, wiki: “Frank_Lampard”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Michael Owen”, pos: “England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Retired”, bio: “France98”, wiki: “Michael_Owen”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Paul Scholes”, pos: “England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Retired”, bio: “Laranja”, wiki: “Paul_Scholes”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Jude Bellingham”, pos: “England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Real Madrid”, bio: “Sevilha”, wiki: “Jude_Bellingham”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Harry Kane”, pos: “England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Bayern de Munique”, bio: “Sem título”, wiki: “Harry_Kane”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Phil Foden”, pos: “England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Manchester City”, bio: “Stockport”, wiki: “Phil_Foden”, foot: “Left foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Bukayo Saka”, pos: “England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Arsenal”, bio: “Pênalti perdido”, wiki: “Bukayo_Saka”, foot: “Left foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Cole Palmer”, pos: “England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Chelsea”, bio: “Gelo”, wiki: “Cole_Palmer”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
 
 // ===== ALEMÃES =====
-{ name: “Miroslav Klose”, pos: “Alemanha 🇩🇪 | Aposentado”, bio: “16 gols”, wiki: “Miroslav_Klose”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Oliver Kahn”, pos: “Alemanha 🇩🇪 | Aposentado”, bio: “Gorila”, wiki: “Oliver_Kahn”, foot: “Destro”, pos_type: “Goleiro”, continent: “Europeu” },
-{ name: “Michael Ballack”, pos: “Alemanha 🇩🇪 | Aposentado”, bio: “Capitão”, wiki: “Michael_Ballack”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Gerd Müller”, pos: “Alemanha 🇩🇪 | Aposentado”, bio: “Bomber”, wiki: “Gerd_Müller”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Franz Beckenbauer”, pos: “Alemanha 🇩🇪 | Aposentado”, bio: “Kaiser”, wiki: “Franz_Beckenbauer”, foot: “Destro”, pos_type: “Defensor”, continent: “Europeu” },
-{ name: “Florian Wirtz”, pos: “Alemanha 🇩🇪 | Bayer Leverkusen”, bio: “Invicto”, wiki: “Florian_Wirtz”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Jamal Musiala”, pos: “Alemanha 🇩🇪 | Bayern de Munique”, bio: “Bambi”, wiki: “Jamal_Musiala”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Toni Kroos”, pos: “Alemanha 🇩🇪 | Aposentado”, bio: “Metrônomo”, wiki: “Toni_Kroos”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Manuel Neuer”, pos: “Alemanha 🇩🇪 | Bayern de Munique”, bio: “Sweeper”, wiki: “Manuel_Neuer”, foot: “Destro”, pos_type: “Goleiro”, continent: “Europeu” },
+{ name: “Miroslav Klose”, pos: “Germany 🇩🇪 | Retired”, bio: “16 gols”, wiki: “Miroslav_Klose”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Oliver Kahn”, pos: “Germany 🇩🇪 | Retired”, bio: “Gorila”, wiki: “Oliver_Kahn”, foot: “Right foot”, pos_type: “Goalkeeper”, continent: “European” },
+{ name: “Michael Ballack”, pos: “Germany 🇩🇪 | Retired”, bio: “Capitão”, wiki: “Michael_Ballack”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Gerd Müller”, pos: “Germany 🇩🇪 | Retired”, bio: “Bomber”, wiki: “Gerd_Müller”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Franz Beckenbauer”, pos: “Germany 🇩🇪 | Retired”, bio: “Kaiser”, wiki: “Franz_Beckenbauer”, foot: “Right foot”, pos_type: “Defender”, continent: “European” },
+{ name: “Florian Wirtz”, pos: “Germany 🇩🇪 | Bayer Leverkusen”, bio: “Invicto”, wiki: “Florian_Wirtz”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Jamal Musiala”, pos: “Germany 🇩🇪 | Bayern de Munique”, bio: “Bambi”, wiki: “Jamal_Musiala”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Toni Kroos”, pos: “Germany 🇩🇪 | Retired”, bio: “Metrônomo”, wiki: “Toni_Kroos”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Manuel Neuer”, pos: “Germany 🇩🇪 | Bayern de Munique”, bio: “Sweeper”, wiki: “Manuel_Neuer”, foot: “Right foot”, pos_type: “Goalkeeper”, continent: “European” },
 
 // ===== ITALIANOS =====
-{ name: “Francesco Totti”, pos: “Itália 🇮🇹 | Aposentado”, bio: “Puppone”, wiki: “Francesco_Totti”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Roberto Baggio”, pos: “Itália 🇮🇹 | Aposentado”, bio: “Rabo de cavalo”, wiki: “Roberto_Baggio”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Andrea Pirlo”, pos: “Itália 🇮🇹 | Aposentado”, bio: “Barba”, wiki: “Andrea_Pirlo”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Gianluigi Buffon”, pos: “Itália 🇮🇹 | Aposentado”, bio: “GG”, wiki: “Gianluigi_Buffon”, foot: “Destro”, pos_type: “Goleiro”, continent: “Europeu” },
-{ name: “Paolo Maldini”, pos: “Itália 🇮🇹 | Aposentado”, bio: “Dinastia”, wiki: “Paolo_Maldini”, foot: “Canhoto”, pos_type: “Defensor”, continent: “Europeu” },
-{ name: “Alessandro Del Piero”, pos: “Itália 🇮🇹 | Aposentado”, bio: “Pintura”, wiki: “Alessandro_Del_Piero”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Gianluigi Donnarumma”, pos: “Itália 🇮🇹 | PSG”, bio: “Traição”, wiki: “Gianluigi_Donnarumma”, foot: “Destro”, pos_type: “Goleiro”, continent: “Europeu” },
-{ name: “Nicolo Barella”, pos: “Itália 🇮🇹 | Inter de Milão”, bio: “Coração”, wiki: “Nicolò_Barella”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Mateo Retegui”, pos: “Itália 🇮🇹 | Atalanta”, bio: “Argentina”, wiki: “Mateo_Retegui”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
+{ name: “Francesco Totti”, pos: “Italy 🇮🇹 | Retired”, bio: “Puppone”, wiki: “Francesco_Totti”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Roberto Baggio”, pos: “Italy 🇮🇹 | Retired”, bio: “Rabo de cavalo”, wiki: “Roberto_Baggio”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Andrea Pirlo”, pos: “Italy 🇮🇹 | Retired”, bio: “Barba”, wiki: “Andrea_Pirlo”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Gianluigi Buffon”, pos: “Italy 🇮🇹 | Retired”, bio: “GG”, wiki: “Gianluigi_Buffon”, foot: “Right foot”, pos_type: “Goalkeeper”, continent: “European” },
+{ name: “Paolo Maldini”, pos: “Italy 🇮🇹 | Retired”, bio: “Dinastia”, wiki: “Paolo_Maldini”, foot: “Left foot”, pos_type: “Defender”, continent: “European” },
+{ name: “Alessandro Del Piero”, pos: “Italy 🇮🇹 | Retired”, bio: “Pintura”, wiki: “Alessandro_Del_Piero”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Gianluigi Donnarumma”, pos: “Italy 🇮🇹 | PSG”, bio: “Traição”, wiki: “Gianluigi_Donnarumma”, foot: “Right foot”, pos_type: “Goalkeeper”, continent: “European” },
+{ name: “Nicolo Barella”, pos: “Italy 🇮🇹 | Inter Milan”, bio: “Coração”, wiki: “Nicolò_Barella”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Mateo Retegui”, pos: “Italy 🇮🇹 | Atalanta”, bio: “Argentina”, wiki: “Mateo_Retegui”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
 
 // ===== HOLANDESES =====
-{ name: “Johan Cruyff”, pos: “Holanda 🇳🇱 | Aposentado”, bio: “Giro”, wiki: “Johan_Cruyff”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Marco van Basten”, pos: “Holanda 🇳🇱 | Aposentado”, bio: “Voleio”, wiki: “Marco_van_Basten”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Ruud van Nistelrooy”, pos: “Holanda 🇳🇱 | Aposentado”, bio: “Área”, wiki: “Ruud_van_Nistelrooy”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Arjen Robben”, pos: “Holanda 🇳🇱 | Aposentado”, bio: “Esquerda”, wiki: “Arjen_Robben”, foot: “Canhoto”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Robin van Persie”, pos: “Holanda 🇳🇱 | Aposentado”, bio: “Mergulho”, wiki: “Robin_van_Persie”, foot: “Canhoto”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Wesley Sneijder”, pos: “Holanda 🇳🇱 | Aposentado”, bio: “Trilha”, wiki: “Wesley_Sneijder”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Virgil van Dijk”, pos: “Holanda 🇳🇱 | Liverpool”, bio: “Muralha”, wiki: “Virgil_van_Dijk”, foot: “Destro”, pos_type: “Defensor”, continent: “Europeu” },
-{ name: “Frenkie de Jong”, pos: “Holanda 🇳🇱 | Barcelona”, bio: “DNA”, wiki: “Frenkie_de_Jong”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Cody Gakpo”, pos: “Holanda 🇳🇱 | Liverpool”, bio: “PSV”, wiki: “Cody_Gakpo”, foot: “Canhoto”, pos_type: “Atacante”, continent: “Europeu” },
+{ name: “Johan Cruyff”, pos: “Netherlands 🇳🇱 | Retired”, bio: “Giro”, wiki: “Johan_Cruyff”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Marco van Basten”, pos: “Netherlands 🇳🇱 | Retired”, bio: “Voleio”, wiki: “Marco_van_Basten”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Ruud van Nistelrooy”, pos: “Netherlands 🇳🇱 | Retired”, bio: “Área”, wiki: “Ruud_van_Nistelrooy”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Arjen Robben”, pos: “Netherlands 🇳🇱 | Retired”, bio: “Esquerda”, wiki: “Arjen_Robben”, foot: “Left foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Robin van Persie”, pos: “Netherlands 🇳🇱 | Retired”, bio: “Mergulho”, wiki: “Robin_van_Persie”, foot: “Left foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Wesley Sneijder”, pos: “Netherlands 🇳🇱 | Retired”, bio: “Trilha”, wiki: “Wesley_Sneijder”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Virgil van Dijk”, pos: “Netherlands 🇳🇱 | Liverpool”, bio: “Muralha”, wiki: “Virgil_van_Dijk”, foot: “Right foot”, pos_type: “Defender”, continent: “European” },
+{ name: “Frenkie de Jong”, pos: “Netherlands 🇳🇱 | Barcelona”, bio: “DNA”, wiki: “Frenkie_de_Jong”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Cody Gakpo”, pos: “Netherlands 🇳🇱 | Liverpool”, bio: “PSV”, wiki: “Cody_Gakpo”, foot: “Left foot”, pos_type: “Forward”, continent: “European” },
 
 // ===== OUTROS =====
-{ name: “Samuel Eto’o”, pos: “Camarões 🇨🇲 | Aposentado”, bio: “Quatro vezes”, wiki: “Samuel_Eto’o”, foot: “Destro”, pos_type: “Atacante”, continent: “Africano” },
-{ name: “Didier Drogba”, pos: “Costa do Marfim 🇨🇮 | Aposentado”, bio: “Munique”, wiki: “Didier_Drogba”, foot: “Destro”, pos_type: “Atacante”, continent: “Africano” },
-{ name: “George Weah”, pos: “Libéria 🇱🇷 | Aposentado”, bio: “Presidente”, wiki: “George_Weah”, foot: “Destro”, pos_type: “Atacante”, continent: “Africano” },
-{ name: “Riyad Mahrez”, pos: “Argélia 🇩🇿 | Al-Ahli”, bio: “Leicester”, wiki: “Riyad_Mahrez”, foot: “Canhoto”, pos_type: “Atacante”, continent: “Africano” },
-{ name: “Mohamed Salah”, pos: “Egito 🇪🇬 | Al-Qadsiah”, bio: “Corrida”, wiki: “Mohamed_Salah”, foot: “Canhoto”, pos_type: “Atacante”, continent: “Africano” },
-{ name: “Sadio Mané”, pos: “Senegal 🇸🇳 | Al-Nassr”, bio: “Humildade”, wiki: “Sadio_Mané”, foot: “Destro”, pos_type: “Atacante”, continent: “Africano” },
-{ name: “James Rodríguez”, pos: “Colômbia 🇨🇴 | Rayo Vallecano”, bio: “Puskas”, wiki: “James_Rodríguez”, foot: “Destro”, pos_type: “Meia”, continent: “Sul-americano” },
-{ name: “Carlos Valderrama”, pos: “Colômbia 🇨🇴 | Aposentado”, bio: “Cabelo”, wiki: “Carlos_Valderrama”, foot: “Destro”, pos_type: “Meia”, continent: “Sul-americano” },
-{ name: “Falcão”, pos: “Brasil 🇧🇷 | Aposentado”, bio: “Futsal”, wiki: “Falcão_(futsal_player)”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Enzo Francescoli”, pos: “Uruguai 🇺🇾 | Aposentado”, bio: “Príncipe”, wiki: “Enzo_Francescoli”, foot: “Destro”, pos_type: “Meia”, continent: “Sul-americano” },
-{ name: “Lúcio”, pos: “Brasil 🇧🇷 | Aposentado”, bio: “Chegada”, wiki: “Lúcio_(footballer)”, foot: “Destro”, pos_type: “Defensor”, continent: “Sul-americano” },
-{ name: “Erling Haaland”, pos: “Noruega 🇳🇴 | Manchester City”, bio: “Robô”, wiki: “Erling_Haaland”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Martin Ødegaard”, pos: “Noruega 🇳🇴 | Arsenal”, bio: “Capitão”, wiki: “Martin_Ødegaard”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Luka Modrić”, pos: “Croácia 🇭🇷 | Real Madrid”, bio: “Bola de Ouro”, wiki: “Luka_Modrić”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Kevin De Bruyne”, pos: “Bélgica 🇧🇪 | Manchester City”, bio: “Passes”, wiki: “Kevin_De_Bruyne”, foot: “Destro”, pos_type: “Meia”, continent: “Europeu” },
-{ name: “Romelu Lukaku”, pos: “Bélgica 🇧🇪 | Napoli”, bio: “Força”, wiki: “Romelu_Lukaku”, foot: “Destro”, pos_type: “Atacante”, continent: “Europeu” },
-{ name: “Son Heung-min”, pos: “Coreia do Sul 🇰🇷 | Tottenham”, bio: “Militar”, wiki: “Son_Heung-min”, foot: “Canhoto”, pos_type: “Atacante”, continent: “Asiático” },
-{ name: “Alphonso Davies”, pos: “Canadá 🇨🇦 | Bayern de Munique”, bio: “Refugiado”, wiki: “Alphonso_Davies”, foot: “Canhoto”, pos_type: “Defensor”, continent: “Norte-americano” },
-{ name: “Federico Valverde”, pos: “Uruguai 🇺🇾 | Real Madrid”, bio: “Cañonero”, wiki: “Federico_Valverde”, foot: “Destro”, pos_type: “Meia”, continent: “Sul-americano” },
-{ name: “Darwin Núñez”, pos: “Uruguai 🇺🇾 | Liverpool”, bio: “Cabeçada”, wiki: “Darwin_Núñez”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Luis Díaz”, pos: “Colômbia 🇨🇴 | Liverpool”, bio: “Pai preso”, wiki: “Luis_Díaz_(footballer,*born_1997)”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
-{ name: “Savinho”, pos: “Brasil 🇧🇷 | Manchester City”, bio: “Revelação”, wiki: “Savinho*(footballer)”, foot: “Destro”, pos_type: “Atacante”, continent: “Sul-americano” },
+{ name: “Samuel Eto’o”, pos: “Cameroon 🇨🇲 | Retired”, bio: “Quatro vezes”, wiki: “Samuel_Eto’o”, foot: “Right foot”, pos_type: “Forward”, continent: “African” },
+{ name: “Didier Drogba”, pos: “Ivory Coast 🇨🇮 | Retired”, bio: “Munique”, wiki: “Didier_Drogba”, foot: “Right foot”, pos_type: “Forward”, continent: “African” },
+{ name: “George Weah”, pos: “Liberia 🇱🇷 | Retired”, bio: “Presidente”, wiki: “George_Weah”, foot: “Right foot”, pos_type: “Forward”, continent: “African” },
+{ name: “Riyad Mahrez”, pos: “Algeria 🇩🇿 | Al-Ahli”, bio: “Leicester”, wiki: “Riyad_Mahrez”, foot: “Left foot”, pos_type: “Forward”, continent: “African” },
+{ name: “Mohamed Salah”, pos: “Egypt 🇪🇬 | Al-Qadsiah”, bio: “Corrida”, wiki: “Mohamed_Salah”, foot: “Left foot”, pos_type: “Forward”, continent: “African” },
+{ name: “Sadio Mané”, pos: “Senegal 🇸🇳 | Al-Nassr”, bio: “Humildade”, wiki: “Sadio_Mané”, foot: “Right foot”, pos_type: “Forward”, continent: “African” },
+{ name: “James Rodríguez”, pos: “Colombia 🇨🇴 | Rayo Vallecano”, bio: “Puskas”, wiki: “James_Rodríguez”, foot: “Right foot”, pos_type: “Midfielder”, continent: “South American” },
+{ name: “Carlos Valderrama”, pos: “Colombia 🇨🇴 | Retired”, bio: “Cabelo”, wiki: “Carlos_Valderrama”, foot: “Right foot”, pos_type: “Midfielder”, continent: “South American” },
+{ name: “Falcão”, pos: “Brazil 🇧🇷 | Retired”, bio: “Futsal”, wiki: “Falcão_(futsal_player)”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Enzo Francescoli”, pos: “Uruguay 🇺🇾 | Retired”, bio: “Príncipe”, wiki: “Enzo_Francescoli”, foot: “Right foot”, pos_type: “Midfielder”, continent: “South American” },
+{ name: “Lúcio”, pos: “Brazil 🇧🇷 | Retired”, bio: “Chegada”, wiki: “Lúcio_(footballer)”, foot: “Right foot”, pos_type: “Defender”, continent: “South American” },
+{ name: “Erling Haaland”, pos: “Norway 🇳🇴 | Manchester City”, bio: “Robô”, wiki: “Erling_Haaland”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Martin Ødegaard”, pos: “Norway 🇳🇴 | Arsenal”, bio: “Capitão”, wiki: “Martin_Ødegaard”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Luka Modrić”, pos: “Croatia 🇭🇷 | Real Madrid”, bio: “Bola de Ouro”, wiki: “Luka_Modrić”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Kevin De Bruyne”, pos: “Belgium 🇧🇪 | Manchester City”, bio: “Passes”, wiki: “Kevin_De_Bruyne”, foot: “Right foot”, pos_type: “Midfielder”, continent: “European” },
+{ name: “Romelu Lukaku”, pos: “Belgium 🇧🇪 | Napoli”, bio: “Força”, wiki: “Romelu_Lukaku”, foot: “Right foot”, pos_type: “Forward”, continent: “European” },
+{ name: “Son Heung-min”, pos: “South Korea 🇰🇷 | Tottenham”, bio: “Militar”, wiki: “Son_Heung-min”, foot: “Left foot”, pos_type: “Forward”, continent: “Asian” },
+{ name: “Alphonso Davies”, pos: “Canada 🇨🇦 | Bayern de Munique”, bio: “Refugiado”, wiki: “Alphonso_Davies”, foot: “Left foot”, pos_type: “Defender”, continent: “North American” },
+{ name: “Federico Valverde”, pos: “Uruguay 🇺🇾 | Real Madrid”, bio: “Cañonero”, wiki: “Federico_Valverde”, foot: “Right foot”, pos_type: “Midfielder”, continent: “South American” },
+{ name: “Darwin Núñez”, pos: “Uruguay 🇺🇾 | Liverpool”, bio: “Cabeçada”, wiki: “Darwin_Núñez”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Luis Díaz”, pos: “Colombia 🇨🇴 | Liverpool”, bio: “Pai preso”, wiki: “Luis_Díaz_(footballer,*born_1997)”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
+{ name: “Savinho”, pos: “Brazil 🇧🇷 | Manchester City”, bio: “Revelação”, wiki: “Savinho*(footballer)”, foot: “Right foot”, pos_type: “Forward”, continent: “South American” },
 ];
 
 let sharedPlayerIdentity;
@@ -228,7 +228,7 @@ container.innerHTML = ‘’;
 for (let i = 0; i < count; i++) {
 const input = document.createElement(‘input’);
 input.type = ‘text’;
-input.placeholder = `Jogador ${i + 1}`;
+input.placeholder = `Player ${i + 1}`;
 input.maxLength = 20;
 input.value = existingValues[i] || ‘’;
 input.className = ‘name-input’;
@@ -257,12 +257,12 @@ atualizarCamposNomes();
 
 async function iniciarJogo() {
 const btn = document.getElementById(‘btn-start-game’);
-btn.innerText = “CARREGANDO…”;
+btn.innerText = “LOADING…”;
 btn.disabled = true;
 
 try {
 const player = jogadorAleatorio();
-const imgUrl = await buscarFotoWikipedia(player.name);
+const imgUrl = await buscarFotoWikipedia(player.wiki);
 sharedPlayerIdentity = { …player, img: imgUrl };
 
 ```
@@ -272,7 +272,7 @@ impostorCount = Math.min(impostorCount, totalPlayers - 1);
 
 // Captura nomes dos jogadores
 const nameInputs = document.getElementById('player-names-container').querySelectorAll('input');
-playerNames = Array.from(nameInputs).map((inp, i) => inp.value.trim() || `Jogador ${i + 1}`);
+playerNames = Array.from(nameInputs).map((inp, i) => inp.value.trim() || `Player ${i + 1}`);
 
 impostorIndices = [];
 while (impostorIndices.length < impostorCount) {
@@ -288,7 +288,7 @@ prepararVez();
 
 } catch (e) {
 console.error(“Erro ao iniciar jogo:”, e);
-btn.innerText = “INICIAR PARTIDA”;
+btn.innerText = “START GAME”;
 btn.disabled = false;
 }
 }
@@ -303,8 +303,8 @@ document.getElementById(‘btn-next-turn’).classList.add(‘hidden’);
 const nome = playerNames[currentPlayerIndex] || `Jogador ${currentPlayerIndex + 1}`;
 const label = document.getElementById(‘instruction-label’);
 const action = document.getElementById(‘instruction-text’);
-if (label) label.innerText = ‘VEZ DE’;
-if (action) action.innerText = nome.toUpperCase();
+if (label) label.innerText = “IT’S”;
+if (action) action.innerText = nome.toUpperCase() + “’S TURN”;
 }
 
 document.getElementById(‘player-card’).addEventListener(‘click’, () => {
@@ -313,12 +313,12 @@ if (!document.getElementById(‘card-inner’).classList.contains(‘hidden’))
 const isImpostor = impostorIndices.includes(currentPlayerIndex);
 const data = isImpostor
 ? {
-name: “VOCÊ É O IMPOSTOR”,
-pos: “FARSANTE”,
+name: “YOU ARE THE IMPOSTOR”,
+pos: “FAKER”,
 bio: (() => {
 const dicas = [sharedPlayerIdentity.foot, sharedPlayerIdentity.pos_type, sharedPlayerIdentity.continent];
 const dica = dicas[Math.floor(Math.random() * dicas.length)];
-return `Sua dica: "${dica}"`;
+return `Your clue: "${dica}"`;
 })(),
 img: IMPOSTOR_IMG
 }
@@ -344,7 +344,7 @@ prepararVez();
 const lbl = document.getElementById(‘instruction-label’);
 const act = document.getElementById(‘instruction-text’);
 if (lbl) lbl.innerText = ‘🗣️’;
-if (act) act.innerText = ‘DEBATE ABERTO!’;
+if (act) act.innerText = ‘OPEN DEBATE!’;
 document.getElementById(‘player-card’).classList.add(‘hidden’);
 document.getElementById(‘btn-next-turn’).classList.add(‘hidden’);
 document.getElementById(‘debate-area’).classList.remove(‘hidden’);
@@ -412,12 +412,12 @@ const container = document.getElementById(‘reveal-impostors’);
 container.innerHTML = ‘’;
 const impostorLabel = document.querySelector(’.reveal-impostors-label’);
 if (impostorLabel) {
-impostorLabel.innerText = impostorIndices.length === 1 ? ‘O impostor era’ : ‘Os impostores eram’;
+impostorLabel.innerText = impostorIndices.length === 1 ? ‘The impostor was’ : ‘The impostors were’;
 }
 impostorIndices.forEach(i => {
 const badge = document.createElement(‘span’);
 badge.className = ‘impostor-badge’;
-badge.innerText = playerNames[i] || `Jogador ${i + 1}`;
+badge.innerText = playerNames[i] || `Player ${i + 1}`;
 container.appendChild(badge);
 });
 
@@ -446,7 +446,7 @@ document.getElementById(‘btn-reveal’).classList.remove(‘animate-pulse’);
 
 document.getElementById(‘reveal-screen’).classList.add(‘hidden’);
 document.getElementById(‘setup-screen’).classList.remove(‘hidden’);
-document.getElementById(‘btn-start-game’).innerText = ‘INICIAR PARTIDA’;
+document.getElementById(‘btn-start-game’).innerText = ‘START GAME’;
 document.getElementById(‘btn-start-game’).disabled = false;
 });
 

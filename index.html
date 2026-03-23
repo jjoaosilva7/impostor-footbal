@@ -665,7 +665,13 @@ function draw(){
     requestAnimationFrame(draw);
 }
 draw();
-document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;});
+// Only enable on non-touch devices
+if (!('ontouchstart' in window)) {
+    document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;});
+} else {
+    // Hide canvas on mobile
+    canvas.style.display='none';
+}
 document.addEventListener('mouseleave',function(){mx=-1;my=-1;trail=[];});
 })();
 </script>

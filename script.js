@@ -252,7 +252,8 @@ atualizarCamposNomes();
 }
 });
 
-// Inicializa campos ao carregar
+// Init on load
+document.addEventListener(“DOMContentLoaded”, atualizarCamposNomes);
 atualizarCamposNomes();
 
 async function iniciarJogo() {
@@ -262,15 +263,25 @@ btn.disabled = true;
 
 try {
 const player = jogadorAleatorio();
-const imgUrl = await buscarFotoWikipedia(player.wiki);
-sharedPlayerIdentity = { …player, img: imgUrl };
 
 ```
+// Try to get photo but don't block the game if it fails
+let imgUrl = imagemFallback();
+try {
+  imgUrl = await Promise.race([
+    buscarFotoWikipedia(player.wiki),
+    new Promise((_, reject) => setTimeout(() => reject('timeout'), 5000))
+  ]);
+} catch(photoErr) {
+  console.log('Photo failed, using fallback');
+}
+
+sharedPlayerIdentity = { ...player, img: imgUrl };
+
 totalPlayers = parseInt(document.getElementById('input-player-count').value) || 4;
 let impostorCount = parseInt(document.getElementById('input-impostor-count').value) || 1;
 impostorCount = Math.min(impostorCount, totalPlayers - 1);
 
-// Captura nomes dos jogadores
 const nameInputs = document.getElementById('player-names-container').querySelectorAll('input');
 playerNames = Array.from(nameInputs).map((inp, i) => inp.value.trim() || `Player ${i + 1}`);
 
@@ -287,9 +298,10 @@ prepararVez();
 ```
 
 } catch (e) {
-console.error(“Erro ao iniciar jogo:”, e);
+console.error(“Game error:”, e);
 btn.innerText = “START GAME”;
 btn.disabled = false;
+alert(“Something went wrong. Please try again.”);
 }
 }
 

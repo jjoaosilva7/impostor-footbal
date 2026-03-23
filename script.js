@@ -221,18 +221,28 @@ return fallbacks[Math.floor(Math.random() * fallbacks.length)];
 function atualizarCamposNomes() {
 const count = parseInt(document.getElementById(‘input-player-count’).value) || 4;
 const container = document.getElementById(‘player-names-container’);
-const existingInputs = container.querySelectorAll(‘input’);
-const existingValues = Array.from(existingInputs).map(i => i.value);
+const inputs = container.querySelectorAll(‘input’);
 
-container.innerHTML = ‘’;
-for (let i = 0; i < count; i++) {
+// Show/hide existing inputs based on count
+inputs.forEach((input, i) => {
+if (i < count) {
+input.style.display = ‘block’;
+input.placeholder = `Player ${i + 1}`;
+} else {
+input.style.display = ‘none’;
+}
+});
+
+// Add more inputs if needed
+if (inputs.length < count) {
+for (let i = inputs.length; i < count; i++) {
 const input = document.createElement(‘input’);
 input.type = ‘text’;
 input.placeholder = `Player ${i + 1}`;
 input.maxLength = 20;
-input.value = existingValues[i] || ‘’;
 input.className = ‘name-input’;
 container.appendChild(input);
+}
 }
 }
 
@@ -253,7 +263,6 @@ atualizarCamposNomes();
 });
 
 // Init on load
-document.addEventListener(“DOMContentLoaded”, atualizarCamposNomes);
 atualizarCamposNomes();
 
 async function iniciarJogo() {

@@ -1,103 +1,124 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Impostor Football</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; touch-action: manipulation; }
         body { background: #0a0f05; color: #fff; font-family: 'Barlow Condensed', sans-serif; min-height: 100dvh; }
         .hidden { display: none !important; }
 
-```
-    /* SCREENS */
-    .screen { min-height: 100dvh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px 16px; }
+        /* SCREENS */
+        .screen { min-height: 100dvh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px 16px; }
 
-    /* LOGO */
-    .logo { text-align: center; margin-bottom: 40px; }
-    .logo h1 { font-family: 'Bebas Neue', sans-serif; font-size: 72px; line-height: 0.9; letter-spacing: 0.04em; color: #fff; }
-    .logo h1 span { color: #d2ff00; }
-    .logo p { font-size: 11px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-top: 8px; }
+        /* LOGO */
+        .logo { text-align: center; margin-bottom: 40px; }
+        .logo h1 { font-family: 'Bebas Neue', sans-serif; font-size: 72px; line-height: 0.9; letter-spacing: 0.04em; color: #fff; }
+        .logo h1 span { color: #d2ff00; }
+        .logo p { font-size: 11px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-top: 8px; }
 
-    /* FORM */
-    .form-card { width: 100%; max-width: 360px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; }
-    .field { margin-bottom: 16px; }
-    .field-label { font-size: 9px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; display: block; margin-bottom: 8px; text-align: center; }
-    .lime { color: #d2ff00; }
-    .red  { color: #ef4444; }
-    .gold { color: #eab308; }
+        /* FORM */
+        .form-card { width: 100%; max-width: 360px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; }
+        .field { margin-bottom: 16px; }
+        .field-label { font-size: 9px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; display: block; margin-bottom: 8px; text-align: center; }
+        .lime { color: #d2ff00; }
+        .red  { color: #ef4444; }
+        .gold { color: #eab308; }
 
-    .stepper { display: flex; align-items: center; gap: 8px; }
-    .stepper-btn { width: 48px; height: 48px; background: rgba(210,255,0,0.08); border: 1px solid rgba(210,255,0,0.3); border-radius: 8px; color: #d2ff00; font-size: 24px; font-weight: 900; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .stepper-num { flex: 1; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; font-family: 'Bebas Neue', sans-serif; font-size: 32px; text-align: center; padding: 8px; outline: none; }
-    .plain-num { width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; font-family: 'Bebas Neue', sans-serif; font-size: 28px; text-align: center; padding: 8px; outline: none; }
-    .name-input { width: 100%; background: #0a0f05; border: 1px solid rgba(210,255,0,0.25); border-radius: 8px; color: #d2ff00; font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 10px 14px; outline: none; text-align: center; -webkit-text-fill-color: #d2ff00; }
-    .name-input::placeholder { color: rgba(210,255,0,0.2); -webkit-text-fill-color: rgba(210,255,0,0.2); }
-    #player-names-container { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
-    .rule { height: 1px; background: rgba(255,255,255,0.08); margin: 20px 0; }
+        .stepper { display: flex; align-items: center; gap: 8px; }
+        .stepper-btn { width: 48px; height: 48px; background: rgba(210,255,0,0.08); border: 1px solid rgba(210,255,0,0.3); border-radius: 8px; color: #d2ff00; font-size: 24px; font-weight: 900; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .stepper-num { flex: 1; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; font-family: 'Bebas Neue', sans-serif; font-size: 32px; text-align: center; padding: 8px; outline: none; }
+        .plain-num { width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; font-family: 'Bebas Neue', sans-serif; font-size: 28px; text-align: center; padding: 8px; outline: none; }
+        .name-input { width: 100%; background: #0a0f05; border: 1px solid rgba(210,255,0,0.25); border-radius: 8px; color: #d2ff00; font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 10px 14px; outline: none; text-align: center; -webkit-text-fill-color: #d2ff00; }
+        .name-input::placeholder { color: rgba(210,255,0,0.2); -webkit-text-fill-color: rgba(210,255,0,0.2); }
+        #player-names-container { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+        .rule { height: 1px; background: rgba(255,255,255,0.08); margin: 20px 0; }
 
-    /* BUTTONS */
-    .btn { display: block; width: 100%; padding: 16px; border: none; border-radius: 10px; font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 0.1em; cursor: pointer; min-height: 52px; }
-    .btn-lime { background: #d2ff00; color: #0a0f05; }
-    .btn-red  { background: #ef4444; color: #fff; }
-    .btn-ghost { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); }
+        /* BUTTONS */
+        .btn { display: block; width: 100%; padding: 16px; border: none; border-radius: 10px; font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 0.1em; cursor: pointer; min-height: 52px; }
+        .btn-lime { background: #d2ff00; color: #0a0f05; }
+        .btn-red  { background: #ef4444; color: #fff; }
+        .btn-ghost { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); }
 
-    /* GAME SCREEN */
-    #game-screen { gap: 16px; }
-    .turn-header { text-align: center; width: 100%; max-width: 360px; }
-    .turn-header .label { font-size: 10px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 4px; }
-    .turn-header .name { font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 0.05em; color: #d2ff00; line-height: 1; }
+        /* GAME SCREEN */
+        #game-screen { gap: 16px; }
+        .turn-header { text-align: center; width: 100%; max-width: 360px; }
+        .turn-header .label { font-size: 10px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 4px; }
+        .turn-header .name { font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 0.05em; color: #d2ff00; line-height: 1; }
 
-    /* CARD */
-    #player-card { width: 100%; max-width: 360px; min-height: 440px; border: 2px solid rgba(255,255,255,0.15); border-radius: 16px; background: rgba(255,255,255,0.03); cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 24px; transition: border-color 0.3s; }
-    #card-inner { width: 100%; text-align: center; }
-    #player-image { width: 100%; height: 240px; object-fit: cover; object-position: top center; border-radius: 10px; margin-bottom: 16px; border: 1px solid rgba(255,255,255,0.1); }
-    #player-name { font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 0.04em; margin-bottom: 6px; }
-    #player-position { font-size: 10px; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: #3b82f6; display: block; margin-bottom: 16px; }
-    #player-bio { font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 0.08em; color: #eab308; background: rgba(234,179,8,0.08); border: 1px solid rgba(234,179,8,0.2); border-radius: 8px; padding: 10px; }
-    #card-back { text-align: center; }
-    .card-back-icon { font-size: 52px; display: block; margin-bottom: 16px; }
-    .card-back-title { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 0.15em; margin-bottom: 6px; }
-    .card-back-sub { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.35); }
+        /* CARD */
+        #player-card { width: 100%; max-width: 360px; min-height: 440px; border: 2px solid rgba(255,255,255,0.15); border-radius: 16px; background: rgba(255,255,255,0.03); cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 24px; transition: border-color 0.3s; }
+        #card-inner { width: 100%; text-align: center; }
+        #player-image { width: 100%; height: 240px; object-fit: cover; object-position: top center; border-radius: 10px; margin-bottom: 16px; border: 1px solid rgba(255,255,255,0.1); }
+        #player-name { font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 0.04em; margin-bottom: 6px; }
+        #player-position { font-size: 10px; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: #3b82f6; display: block; margin-bottom: 16px; }
+        #player-bio { font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 0.08em; color: #eab308; background: rgba(234,179,8,0.08); border: 1px solid rgba(234,179,8,0.2); border-radius: 8px; padding: 10px; }
+        #card-back { text-align: center; }
+        .card-back-icon { font-size: 52px; display: block; margin-bottom: 16px; }
+        .card-back-title { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 0.15em; margin-bottom: 6px; }
+        .card-back-sub { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.35); }
 
-    /* DEBATE */
-    #debate-area { width: 100%; max-width: 360px; display: flex; flex-direction: column; align-items: center; gap: 16px; }
-    .debate-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: #eab308; }
-    .timer-wrap { position: relative; width: 130px; height: 130px; }
-    .timer-wrap svg { width: 100%; height: 100%; transform: rotate(-90deg); }
-    .timer-center { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
-    #timer-display { font-family: 'Bebas Neue', sans-serif; font-size: 50px; color: #eab308; line-height: 1; }
-    #timer-ring { transition: stroke-dashoffset 1s linear; }
+        /* DEBATE */
+        #debate-area { width: 100%; max-width: 360px; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+        .debate-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: #eab308; }
+        .timer-wrap { position: relative; width: 130px; height: 130px; }
+        .timer-wrap svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+        .timer-center { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+        #timer-display { font-family: 'Bebas Neue', sans-serif; font-size: 50px; color: #eab308; line-height: 1; }
+        #timer-ring { transition: stroke-dashoffset 1s linear; }
 
-    /* REVEAL */
-    .reveal-wrap { width: 100%; max-width: 360px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 28px 24px; text-align: center; }
-    .reveal-eyebrow { font-size: 9px; font-weight: 700; letter-spacing: 0.35em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 14px; }
-    #reveal-image { width: 100%; height: 180px; object-fit: cover; object-position: top; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 16px; max-width: 360px; }
-    #reveal-name { font-family: 'Bebas Neue', sans-serif; font-size: 42px; letter-spacing: 0.04em; margin-bottom: 6px; }
-    #reveal-pos { font-size: 10px; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: #3b82f6; display: block; margin-bottom: 20px; }
-    .reveal-rule { height: 1px; background: rgba(255,255,255,0.08); margin-bottom: 20px; }
-    .reveal-imp-label { font-size: 9px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: #ef4444; margin-bottom: 10px; }
-    #reveal-impostors { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 24px; }
-    .impostor-badge { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); color: #fca5a5; font-weight: 700; font-size: 13px; padding: 6px 16px; border-radius: 100px; }
+        /* REVEAL */
+        .reveal-wrap { width: 100%; max-width: 360px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 28px 24px; text-align: center; }
+        .reveal-eyebrow { font-size: 9px; font-weight: 700; letter-spacing: 0.35em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 14px; }
+        #reveal-image { width: 100%; height: 180px; object-fit: cover; object-position: top; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 16px; max-width: 360px; }
+        #reveal-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 46px;
+            letter-spacing: 0.04em;
+            margin-bottom: 6px;
+            background: linear-gradient(135deg, #ffffff 0%, #d2ff00 60%, #a8cc00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        #reveal-pos { font-size: 10px; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(210,255,0,0.7); display: block; margin-bottom: 20px; }
+        .reveal-rule { height: 1px; background: rgba(255,255,255,0.08); margin-bottom: 20px; }
+        .reveal-imp-label {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 13px;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: #ef4444;
+            margin-bottom: 12px;
+        }
+        #reveal-impostors { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 24px; }
+        .impostor-badge {
+            background: rgba(239,68,68,0.12);
+            border: 1px solid rgba(239,68,68,0.4);
+            color: #fca5a5;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 16px;
+            letter-spacing: 0.08em;
+            padding: 8px 20px;
+            border-radius: 100px;
+        }
 
-    /* ANIMATIONS */
-    @keyframes fadeUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
-    .a1 { animation: fadeUp 0.5s ease both; }
-    .a2 { animation: fadeUp 0.5s 0.15s ease both; }
-    .a3 { animation: fadeUp 0.5s 0.3s ease both; }
-    .a4 { animation: fadeUp 0.5s 0.45s ease both; }
-    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
-    .animate-pulse { animation: pulse 1s infinite; }
-</style>
-```
-
+        /* ANIMATIONS */
+        @keyframes fadeUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+        .a1 { animation: fadeUp 0.5s ease both; }
+        .a2 { animation: fadeUp 0.5s 0.15s ease both; }
+        .a3 { animation: fadeUp 0.5s 0.3s ease both; }
+        .a4 { animation: fadeUp 0.5s 0.45s ease both; }
+        @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+        .animate-pulse { animation: pulse 1s infinite; }
+    </style>
 </head>
 <body>
 
 <!-- SETUP -->
-
 <section id="setup-screen" class="screen">
     <div class="logo a1">
         <h1>IMPOSTOR<br><span>FOOTBALL</span></h1>
@@ -133,7 +154,6 @@
 </section>
 
 <!-- GAME -->
-
 <section id="game-screen" class="screen hidden">
     <div class="turn-header">
         <p class="label" id="instruction-label">it's</p>
@@ -167,7 +187,6 @@
 </section>
 
 <!-- REVEAL -->
-
 <section id="reveal-screen" class="screen hidden">
     <div class="reveal-wrap">
         <p class="reveal-eyebrow a1">The player was...</p>
@@ -644,6 +663,5 @@ document.getElementById('btn-new-game').addEventListener('click', () => {
 document.getElementById('btn-start-game').addEventListener('click', iniciarJogo);
 
 </script>
-
 </body>
 </html>
